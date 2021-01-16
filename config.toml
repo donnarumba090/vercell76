@@ -1,0 +1,4 @@
+baseURL = "https://windowsimagebigg.vercel.app"
+languageCode = "en-us"
+title = "Windows Image Viewer"
+theme = "tale-hugo-master"

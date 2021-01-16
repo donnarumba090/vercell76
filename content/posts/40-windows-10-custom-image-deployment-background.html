@@ -1,0 +1,75 @@
+---
+title: "40+ Windows 10 Custom Image Deployment Background"
+description: "I have been given a custom image made for deployment over a network, however i have an issue getting the tpm in the proper state (cleared) to allow me to deploy the image without it coming back with a dirty environment screen, keywords:"
+date: "2020-03-19"
+categories:
+  - "Windows Image"
+images: 
+  - "https://docs.microsoft.com/en-us/windows/deployment/images/captureimage.png"
+featuredImage: "https://docs.microsoft.com/en-us/windows/deployment/images/windows-icd.png"
+featured_image: "https://docs.microsoft.com/en-us/windows/deployment/images/mdt-11-fig09.png"
+image: "https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/images/dep-win8-sxs-createmodelspecificfiles.jpg"
+---
+
+<article>
+    <p><strong>40+ Windows 10 Custom Image Deployment Background</strong>. At this point, windows will launch the new deployment share wizard. .programs, apart from windows deployment and imaging tools, part of windows 10 assessment and deployment kit (adk) needed later in the post.</p>
+
+    <p>
+                        <figure>
+            <img src="https://sec.ch9.ms/ch9/03ec/5a65d6c2-de76-4920-93bb-6834cd8c03ec/WIN213_Custom.jpg" alt="What S New With Windows 10 Deployment Australia 2017 Channel 9" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmkyXrgMDEZSAdvQef2QidYdVYdow0kan5Q&amp;usqp=CAU';">
+            <figcaption>What S New With Windows 10 Deployment Australia 2017 Channel 9 from sec.ch9.ms</figcaption>
+        </figure>
+                For the planned customization of the image, you need to switch windows 10 into audit mode. The image that i am trying to capture was built with a windows 10 task sequence and has a few installed applications. How to build and deploy an image for windows 10 on windows imaging and configuration designer icd.
+    </p>
+
+    <h3>Upgrade a windows image to a different edition.</h3>
+    <p>The wizard&#039;s initial screen asks you to provide a deployment share path. When prompted,choose custom image we captured from client windows 10 computer. As far as i know, we could use mdt 2013 to achieve your demand: Only deploy windows 10 image onto the system partition.</p>
+</article>
+
+<section>
+    <aside>
+        <a href="https://web.sas.upenn.edu/jasonrw/files/2017/04/05-Windows10-Install-PostInstall01-2gy21th.png" target="_blank"><img alt="Building An Image Of Windows 10 For Mass Distribution Jason Watkins" src="https://web.sas.upenn.edu/jasonrw/files/2017/04/05-Windows10-Install-PostInstall01-2gy21th.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx48aO7CsTrxuFKOI4C9sziRoS_dWCKujdBQ&amp;usqp=CAU';"></a>
+        <small>Source: web.sas.upenn.edu</small>
+        <p>Now let the installation run through until you come to the.</p>
+    </aside>
+    <aside>
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/images/dep-win8-sxs-createmodelspecificfiles.jpg" target="_blank"><img alt="Oem Deployment Of Windows 10 For Desktop Editions Microsoft Docs" src="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/images/dep-win8-sxs-createmodelspecificfiles.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_YbclTur9MCXoBSlG8_w6P81g4J1ouyBeg&amp;usqp=CAU';"></a>
+        <small>Source: docs.microsoft.com</small>
+        <p>Once i had all the images ready, i created a file structure and then made the below batch or cmd file for my application.</p>
+    </aside>
+    <aside>
+        <a href="https://www.robinhobo.com/wp-content/uploads/2019/09/How-to-create-a-custom-image-with-WVD-001.jpg" target="_blank"><img alt="How To Create A Custom Windows 10 Multi User Image With Lob Applications For Windows Virtual Desktop Preview Wvd Hostpool Deployments" src="https://www.robinhobo.com/wp-content/uploads/2019/09/How-to-create-a-custom-image-with-WVD-001.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrikqEVppat0zELUfJtK8AyVynwcFIojiUw&amp;usqp=CAU';"></a>
+        <small>Source: www.robinhobo.com</small>
+        <p>Under deployment settings, select the purpose as available.</p>
+    </aside>
+    <aside>
+        <a href="https://www.anoopcnair.com/wp-content/uploads/2020/02/33-1-1024x868.png" target="_blank"><img alt="Capture Custom Windows 10 Image Creation Using Mdt" src="https://www.anoopcnair.com/wp-content/uploads/2020/02/33-1-1024x868.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2XOiejI11FB_El8qYVUeMDfnaczZllzSQww&amp;usqp=CAU';"></a>
+        <small>Source: www.anoopcnair.com</small>
+        <p>Browse to your custom install.wim created earlier in previous section.</p>
+    </aside>
+    <aside>
+        <a href="https://docs.microsoft.com/en-us/windows/deployment/images/mdt-monitoring.png" target="_blank"><img alt="Create A Windows 10 Reference Image Windows 10 Windows Deployment Microsoft Docs" src="https://docs.microsoft.com/en-us/windows/deployment/images/mdt-monitoring.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlUdd7QQYzO2Eg4dZvBjkXPgOAHC6RbnNwA&amp;usqp=CAU';"></a>
+        <small>Source: docs.microsoft.com</small>
+        <p>More details available in the post.</p>
+    </aside>
+    <aside>
+        <a href="https://askme4tech.com/sites/default/files/styles/resize/public/downloads.png?itok=TXYKjJVh" target="_blank"><img alt="How To Prepare Mdt For In Place Upgrade To Windows 10 2004 Askme4tech" src="https://askme4tech.com/sites/default/files/styles/resize/public/downloads.png?itok=TXYKjJVh" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqJQmQonxKPcnUA48YiscMWg1g5WZnSL51w&amp;usqp=CAU';"></a>
+        <small>Source: askme4tech.com</small>
+        <p>Upgrade a windows image to a different edition.</p>
+    </aside>
+    <aside>
+        <a href="https://www.ubackup.com/windows-10/images/sysprep-windows-10-6988/iso-file.png" target="_blank"><img alt="How To Use Sysprep In Windows 10 Step By Step" src="https://www.ubackup.com/windows-10/images/sysprep-windows-10-6988/iso-file.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJcaRmAjXSkHQH8wMpFCVBvS31J7vNcvkD0A&amp;usqp=CAU';"></a>
+        <small>Source: www.ubackup.com</small>
+        <p>Customizing windows 10 in audit mode.</p>
+    </aside>
+    <aside>
+        <a href="https://image.slidesharecdn.com/me2015-windows10deploymentusingconfigmgrandmdt-october2015-151029141948-lva1-app6891/95/windows-10-deployment-using-configmgr-and-mdt-12-638.jpg?cb=1446128540" target="_blank"><img alt="Windows 10 Deployment Using Configmgr And Mdt" src="https://image.slidesharecdn.com/me2015-windows10deploymentusingconfigmgrandmdt-october2015-151029141948-lva1-app6891/95/windows-10-deployment-using-configmgr-and-mdt-12-638.jpg?cb=1446128540" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgh44IrmhCtRVoXn2tI_7nG8rn2FB8TtWPSg&amp;usqp=CAU';"></a>
+        <small>Source: image.slidesharecdn.com</small>
+        <p>Creating a reference image is important because mdt supports adding both full source windows 10 dvds (isos) and custom images that you in order to build and capture your windows 10 reference image for deployment using mdt.</p>
+    </aside>
+    <aside>
+        <a href="https://askme4tech.com/sites/default/files/styles/resize/public/import-os-step1_0.png?itok=zNsoyv6i" target="_blank"><img alt="How To Deploy A Windows 10 Custom Image With Mdt Askme4tech" src="https://askme4tech.com/sites/default/files/styles/resize/public/import-os-step1_0.png?itok=zNsoyv6i" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpUN3UYUtiO2Vux38QHzjJ2A0lo8PatxWBg&amp;usqp=CAU';"></a>
+        <small>Source: askme4tech.com</small>
+        <p>Now normally follow through the installation process.</p>
+    </aside>
+</section>

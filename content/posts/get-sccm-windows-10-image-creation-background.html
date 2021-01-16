@@ -1,0 +1,75 @@
+---
+title: "Get Sccm Windows 10 Image Creation Background"
+description: "This process installs the sccm client onto a windows 10 system through dynamic provisioning."
+date: "2020-03-16"
+categories:
+  - "Windows Image"
+images: 
+  - "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/138533i98F03CD64D700C65/image-size/large?v=1.0&amp;px=999"
+featuredImage: "https://ccmexec.com/wp-content/uploads/2016/01/WindowsDef_9.png"
+featured_image: "https://qtechbabble.files.wordpress.com/2018/02/unattendxml.png?w=625"
+image: "https://777notes.files.wordpress.com/2016/02/image1.png"
+---
+
+<article>
+    <p><strong>Get Sccm Windows 10 Image Creation Background</strong>. When prompted,choose custom image we captured from client windows 10 computer. Create and deploy sccm windows 10 build and capture task sequence.</p>
+
+    <p>
+                        <figure>
+            <img src="https://support.citrix.com/files/public/support/article/CTX202002/images/0EM60000000DtLa.png" alt="Deploy Citrix Receiver For Windows Using System Center Configuration Manager 2012 R2" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGCQNyacjGXiobkfygRADHN1T8Zl-N6KcSkw&amp;usqp=CAU';">
+            <figcaption>Deploy Citrix Receiver For Windows Using System Center Configuration Manager 2012 R2 from support.citrix.com</figcaption>
+        </figure>
+                Create variants and specify the settings. .to create windows 10 image to offer for end users. After wizard finishes,burn new created iso to cd/dvd media.
+    </p>
+
+    <h3>Or you can create your custom image with adk and add to sccm.</h3>
+    <p>Select distribution point and click next; You may copy any other versions of windows in *.iso files. We have many options to manage and proceed the deployment.here we will choose the microsoft deployment toolkit (a.k.a mdt) to deploy the captured wim file. Create and deploy sccm windows 10 build and capture task sequence.</p>
+</article>
+
+<section>
+    <aside>
+        <a href="https://scd-systemcenterdude.netdna-ssl.com/wp-content/uploads/2016/05/14361-1.png" target="_blank"><img alt="Sccm Windows 10 Customization Using Task Sequences" src="https://scd-systemcenterdude.netdna-ssl.com/wp-content/uploads/2016/05/14361-1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9dmAHARTp95GX1HC3YT3Ry6s1IsViqUfTQQ&amp;usqp=CAU';"></a>
+        <small>Source: scd-systemcenterdude.netdna-ssl.com</small>
+        <p>Specify boot image (by default sccm is shipped with 2 boot images x86 and x64) and distribution point.</p>
+    </aside>
+    <aside>
+        <a href="https://blog.ctglobalservices.com/wp-content/uploads/old/101315_1310_AddtheTrigg1.png" target="_blank"><img alt="Add The Trigger Setup Rollback Step In Windows Vnext Windows 10 Upgrade Task Sequence For Proper Status Monitoring Ctglobal" src="https://blog.ctglobalservices.com/wp-content/uploads/old/101315_1310_AddtheTrigg1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-MvO8XrIxYeO0j-1ov2ih3cosZACeshHnqA&amp;usqp=CAU';"></a>
+        <small>Source: blog.ctglobalservices.com</small>
+        <p>They all need to wipped before handing them to end users.</p>
+    </aside>
+    <aside>
+        <a href="https://scd-systemcenterdude.netdna-ssl.com/wp-content/uploads/2016/02/11924-10.png" target="_blank"><img alt="Windows 10 Deployment Create Sccm Windows 10 Build And Capture Task Sequence" src="https://scd-systemcenterdude.netdna-ssl.com/wp-content/uploads/2016/02/11924-10.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2i7p_9jDwLULhQEHZrkngBnyjpGIKQqe6w&amp;usqp=CAU';"></a>
+        <small>Source: scd-systemcenterdude.netdna-ssl.com</small>
+        <p>Create variants and specify the settings.</p>
+    </aside>
+    <aside>
+        <a href="https://docs.microsoft.com/en-us/mem/configmgr/osd/media/precacheproperties2.png" target="_blank"><img alt="Configure Pre Cache Content Configuration Manager Microsoft Docs" src="https://docs.microsoft.com/en-us/mem/configmgr/osd/media/precacheproperties2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAGGKa8J66IMrpIUCJQ-AikR9UhOq6gCkbQ&amp;usqp=CAU';"></a>
+        <small>Source: docs.microsoft.com</small>
+        <p>Copy its contents (everything) to a folder you create on.</p>
+    </aside>
+    <aside>
+        <a href="https://docs.microsoft.com/en-us/windows/deployment/images/configmgr-collection.png" target="_blank"><img alt="Steps To Deploy Windows 10 With Microsoft Endpoint Configuration Manager Windows Deployment Microsoft Docs" src="https://docs.microsoft.com/en-us/windows/deployment/images/configmgr-collection.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_PYVuHpt6vVwCFFGIOwunLn6nJj1WyS_Fg&amp;usqp=CAU';"></a>
+        <small>Source: docs.microsoft.com</small>
+        <p>Technically windows icd has use case scenarios for all customers.</p>
+    </aside>
+    <aside>
+        <a href="https://blog.adexis.com.au/wp-content/uploads/2019/06/SupportedPlatforms.png" target="_blank"><img alt="Sccm Windows 10 No Longer Ticked As Deployment Target Os For Packages And Ts S After Upgrade To Current Branch" src="https://blog.adexis.com.au/wp-content/uploads/2019/06/SupportedPlatforms.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJP6uvRf3GjNRdt16fA_CxpZeFGFLqkPGVBA&amp;usqp=CAU';"></a>
+        <small>Source: blog.adexis.com.au</small>
+        <p>1.1) copy the reference image to the sccm software repository.</p>
+    </aside>
+    <aside>
+        <a href="https://docs.microsoft.com/en-us/windows/deployment/images/pc0003a.png" target="_blank"><img alt="Refresh A Windows 7 Sp1 Client With Windows 10 Using Configuration Manager Windows Deployment Microsoft Docs" src="https://docs.microsoft.com/en-us/windows/deployment/images/pc0003a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZqjaz3dQtP13z7a_fAAJxwXXf1jd80g2UA&amp;usqp=CAU';"></a>
+        <small>Source: docs.microsoft.com</small>
+        <p>Step 1) import the windows 10 reference image into sccm.</p>
+    </aside>
+    <aside>
+        <a href="https://4sysops.com/wp-content/uploads/2016/04/Overview-of-Windows-10-versions.png" target="_blank"><img alt="Upgrading Windows 10 With Sccm Windows 10 Servicing Or Task Sequence 4sysops" src="https://4sysops.com/wp-content/uploads/2016/04/Overview-of-Windows-10-versions.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5DAq-478dPxnvfq5_Ti94dInT39mskwVxZA&amp;usqp=CAU';"></a>
+        <small>Source: 4sysops.com</small>
+        <p>You may copy any other versions of windows in *.iso files.</p>
+    </aside>
+    <aside>
+        <a href="https://www.anoopcnair.com/wp-content/uploads/2017/10/SCCM-CB-Task-Sequence-to-Upgrade-Windows-10-1709-4.jpg" target="_blank"><img alt="How To Create Sccm Windows 10 1709 Upgrade Task Sequence How To Manage Devices" src="https://www.anoopcnair.com/wp-content/uploads/2017/10/SCCM-CB-Task-Sequence-to-Upgrade-Windows-10-1709-4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLATvgCxsa4DPVPWI1lqrnrlLfQqzgTtV6bQ&amp;usqp=CAU';"></a>
+        <small>Source: www.anoopcnair.com</small>
+        <p>In the sccm console, go to click browse and select windows 10 1909 enterprise image package.</p>
+    </aside>
+</section>
